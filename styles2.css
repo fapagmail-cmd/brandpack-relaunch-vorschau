@@ -1,0 +1,60 @@
+/* Zusatzgestaltung für Variante 02. Variante 01 nutzt weiterhin nur styles.css. */
+.intro{display:grid;grid-template-columns:1fr 1fr;column-gap:7vw;padding:7vw 7.2vw 5vw}.eyebrow{grid-column:1/-1;font-size:14px;font-weight:500;margin-bottom:24px}.intro h2{font-size:clamp(28px,3vw,52px);line-height:1.13;font-weight:700;letter-spacing:-.035em}.intro-copy{max-width:620px}.intro-copy>p:first-child{font-size:clamp(16px,1.3vw,22px);line-height:1.6}.draft-note{font-size:12px;line-height:1.5;color:#666;margin-top:22px}.variant-two .disciplines{padding-top:0}.discipline-accordion{margin:1.25vw 6.3vw 0 7.3vw}.discipline{border-bottom:1px solid #858585}.discipline summary{display:flex;justify-content:space-between;align-items:center;gap:24px;cursor:pointer;padding:1.2vw 0;list-style:none}.discipline summary h3{font-size:clamp(24px,3.7vw,70px);line-height:1.15;letter-spacing:-.045em;margin:0;font-weight:700}.discipline summary:hover h3{color:#006b66}summary::-webkit-details-marker{display:none}summary:focus-visible{outline:3px solid #0869ff;outline-offset:5px}.expand-icon{position:relative;display:block;flex:0 0 22px;width:22px;height:22px}.expand-icon:before,.expand-icon:after{content:"";position:absolute;top:10px;left:0;width:22px;height:2px;background:currentColor;transition:transform .2s}.expand-icon:after{transform:rotate(90deg)}details[open]>summary .expand-icon:after{transform:rotate(0)}.discipline[open]{border-bottom-color:#000}.discipline-content{display:grid;grid-template-columns:1fr 1.65fr;gap:5vw;background:#f1faf9;padding:34px;margin-bottom:26px;animation:content-in .25s ease-out}.detail-lead{font-size:clamp(22px,2vw,32px);font-weight:500;line-height:1.3}.detail-copy p{font-size:16px;line-height:1.65;margin-bottom:18px}.service-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:25px}.service-tags li{font-size:13px;background:#d2f5f1;padding:7px 10px;line-height:1.4}
+.variant-two .case{cursor:default;overflow:hidden;isolation:isolate}.variant-two .case:hover>img{transform:none}.case-panel{position:absolute;z-index:1;width:clamp(170px,13vw,220px);max-width:calc(100% - 48px);max-height:calc(100% - 48px);overflow:auto;background:#adcff3;transition:width .3s ease,box-shadow .3s ease;color:#000;scrollbar-width:thin}.case-perlweiss .case-panel{left:2.6%;bottom:4.6%}.case-priorin .case-panel{right:2.8%;top:4.6%;background:#d4c0a9}.case-forest .case-panel{left:3%;top:6%;background:#c3ae70}.case-panel summary{display:flex;flex-direction:column;gap:20px;list-style:none;cursor:pointer;padding:18px;min-height:180px}.case-panel-heading{display:flex;justify-content:space-between;align-items:center;gap:12px;padding-bottom:12px;border-bottom:1px solid #0007}.case-panel-heading strong{font-size:14px;font-weight:700}.case-panel .expand-icon{flex-basis:16px;width:16px;height:16px}.case-panel .expand-icon:before,.case-panel .expand-icon:after{width:16px;top:7px}.case-teaser{font-size:16px;line-height:1.35;font-weight:500}.case-hint{font-size:11px;line-height:1.4;letter-spacing:.025em}.case-panel[open]{width:53%;box-shadow:0 12px 32px #0002}.case-panel[open] summary{min-height:0;gap:12px;padding:24px 28px 16px}.case-panel[open] .case-hint{display:none}.case-panel[open] .case-teaser{font-size:clamp(20px,1.8vw,28px);font-weight:700}.case-body{padding:0 28px 26px;animation:content-in .25s ease-out}.case-body p{font-size:16px;line-height:1.55;margin-bottom:16px}.case-body .case-draft{font-size:11px;line-height:1.4;margin-bottom:18px;padding-top:2px}.case-followup{background:none;padding:8px 0;border-bottom:1px solid #000;font-size:14px;font-weight:500;min-height:44px}.case-followup:hover{opacity:.65}.role-copy{margin:2.8vw 6.3vw 0 7.2vw;max-width:950px}.role-copy>p{font-size:clamp(17px,1.5vw,24px);line-height:1.55;max-width:760px}.role-details{margin-top:28px}.role-details>summary{display:flex;align-items:center;justify-content:space-between;gap:25px;border-bottom:1px solid #999;padding:14px 0;cursor:pointer;list-style:none;font-size:16px;font-weight:500;max-width:760px}.role-expanded{padding:28px 0 0;max-width:760px;animation:content-in .25s ease-out}.role-expanded h3{font-size:24px;line-height:1.3;margin:0 0 20px}.role-expanded p{font-size:16px;line-height:1.65;margin-bottom:18px}.news-text{display:flex;flex-direction:column;gap:12px;padding:22px 24px 26px;text-align:left;min-height:175px;background:#f3f3f3}.news-text strong{font-size:clamp(18px,1.6vw,26px);font-weight:700;line-height:1.25}.news-text>span{font-size:16px;line-height:1.5;font-weight:400}.variant-two .news{padding-bottom:7vw}.faq{padding-bottom:9vw}.faq-layout{display:grid;grid-template-columns:1fr 1.5fr;gap:7vw;margin:4vw 6.3vw 0 7.2vw}.faq-layout h3{font-size:clamp(27px,3.2vw,48px);line-height:1.12;letter-spacing:-.04em;font-weight:700;margin:0 0 22px}.faq-layout>div>p{font-size:16px;line-height:1.6;max-width:290px}.faq-list details{border-bottom:1px solid #999}.faq-list details:first-child{border-top:1px solid #999}.faq-list summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:20px;font-size:18px;font-weight:500;line-height:1.4;padding:22px 0}.faq-list details>p{font-size:16px;line-height:1.65;padding:2px 30px 25px 0;animation:content-in .25s ease-out}.variant-note{font-size:12px;line-height:1.6;color:#bdbdbd}.variant-note a{text-decoration:underline;text-underline-offset:3px}.variant-note span{display:block;margin-top:5px;max-width:600px}.variant-two .footer{gap:3vw}.variant-two .footer-nav{margin-bottom:4vw}@keyframes content-in{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:none}}
+@media(max-width:1100px){.variant-two .case{overflow:visible}.case-panel,.case-panel[open],.case-perlweiss .case-panel,.case-priorin .case-panel,.case-forest .case-panel{position:relative;inset:auto;width:100%;max-width:none;max-height:none;box-shadow:none;transition:none}.case-panel summary{min-height:0;gap:10px;padding:20px 24px}.case-panel-heading{padding-bottom:10px}.case-panel-heading strong{font-size:16px}.case-hint{display:none}.case-panel[open] summary{padding:20px 24px 16px}.case-panel[open] .case-teaser{font-size:22px}.case-body{padding:0 24px 24px}.discipline summary h3{font-size:3.7vw}.discipline-content{gap:28px;padding:25px;grid-template-columns:1fr 1.5fr}}
+@media(max-width:700px){.intro{padding:80px 0 50px;grid-template-columns:1fr;gap:22px}.eyebrow{font-size:12px;margin-bottom:0}.intro h2{font-size:32px}.intro-copy>p:first-child{font-size:17px;line-height:1.6}.draft-note{margin-top:16px}.discipline-accordion{margin:20px 0 0}.discipline summary{gap:14px;padding:20px 0}.discipline summary h3{font-size:clamp(21px,5.4vw,32px)}.expand-icon{flex-basis:18px;width:18px;height:18px}.expand-icon:before,.expand-icon:after{width:18px;top:8px}.discipline-content{display:block;padding:22px 20px;margin-bottom:18px}.detail-lead{font-size:23px;margin-bottom:20px}.detail-copy p{font-size:16px;line-height:1.65}.service-tags{gap:6px;margin-top:20px}.service-tags li{font-size:12px}.role-copy{margin:28px 0 0}.role-copy>p{font-size:18px}.role-details>summary{font-size:14px}.role-expanded h3{font-size:24px}.news-text{padding:20px;min-height:220px}.news-text strong{font-size:21px}.variant-two .news{padding-bottom:70px}.faq{padding-bottom:75px}.faq-layout{display:block;margin:32px 0 0}.faq-layout h3{font-size:33px}.faq-layout>div>p{margin-bottom:30px;max-width:100%}.faq-list summary{font-size:17px;padding:20px 0}.faq-list details>p{padding-right:0}.variant-note{font-size:11px}.variant-two .footer{gap:35px}.variant-two .footer-nav{margin-bottom:15px}}
+@media(prefers-reduced-motion:reduce){.discipline-content,.case-body,.role-expanded,.faq-list details>p{animation:none}}
+/* Auch bei vollständigen Screenshots bleibt der Sprunglink außerhalb des Fokus unsichtbar. */
+.variant-two .skip-link:not(:focus){clip-path:inset(100%);width:1px;height:1px;overflow:hidden}
+
+/* Inhalte gezielt entdecken: Emblem und Markenstatement. */
+.variant-two .emblem{padding:0;background:none;border:0}
+.variant-two .emblem[aria-expanded="true"]{transform:rotate(15deg)}
+.variant-two .intro[hidden],.variant-two .role-copy[hidden]{display:none}
+.variant-two .intro:not([hidden]){animation:content-in .3s ease-out}
+.variant-two .disciplines{padding-top:3.7vw}
+.variant-two .intro:not([hidden])+.disciplines{padding-top:0}
+.variant-two .role-statement{display:block;background:none;padding:0;text-align:left;color:inherit}
+.variant-two .role-copy:not([hidden]){animation:content-in .3s ease-out}
+.variant-two .role .section-link{margin-top:4vw}
+@media(max-width:600px){
+  .variant-two .disciplines{padding-top:78px}
+  .variant-two .intro:not([hidden])+.disciplines{padding-top:0}
+  .variant-two .role .section-link{margin-top:28px}
+}
+@media(prefers-reduced-motion:reduce){
+  .variant-two .intro:not([hidden]),.variant-two .role-copy:not([hidden]){animation:none}
+}
+
+/* Markierbarer Fließtext behält auch in Projektboxen den normalen Textcursor. */
+.variant-two .case-body p{cursor:text}
+
+/* Dezente Interaktionen in Variante 02. */
+.variant-two::selection,
+.variant-two ::selection{background:var(--cyan);color:var(--ink);text-shadow:none}
+
+.variant-two .main-nav a::after{background:var(--cyan)}
+.variant-two .main-nav a:focus-visible::after{transform:scaleX(1)}
+.variant-two :is(.text-link,.footer-nav a,.case-followup,.legal button,.variant-note a){
+  background-image:linear-gradient(var(--cyan),var(--cyan));
+  background-repeat:no-repeat;
+  background-position:left bottom;
+  background-size:0 2px;
+  transition:background-size .24s ease;
+}
+.variant-two :is(.text-link,.footer-nav a,.case-followup,.legal button,.variant-note a):is(:hover,:focus-visible){
+  background-size:100% 2px;
+  text-decoration:none;
+}
+
+.variant-two .expand-icon{transition:transform .3s ease}
+.variant-two .expand-icon::after{transition:transform .3s ease}
+@media(hover:hover){
+  .variant-two details:not([open])>summary:hover .expand-icon{transform:rotate(90deg)}
+}
+.variant-two details:not([open])>summary:focus-visible .expand-icon{transform:rotate(90deg)}
+.variant-two details[open]>summary .expand-icon{transform:rotate(180deg)}
+@media(prefers-reduced-motion:reduce){
+  .variant-two :is(.text-link,.footer-nav a,.case-followup,.legal button,.variant-note a,.expand-icon),
+  .variant-two .expand-icon::after{transition:none}
+}
