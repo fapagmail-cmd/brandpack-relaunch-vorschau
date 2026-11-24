@@ -1,0 +1,118 @@
+/* Meeting-Entwurf 03 – lokale variable Schriften, unabhängig von Variante 02. */
+@font-face{font-family:Jost;src:url('material/fonts/Jost-VariableFont_wght.ttf') format('truetype');font-style:normal;font-weight:100 900;font-display:swap}
+@font-face{font-family:'Libre Baskerville';src:url('material/fonts/LibreBaskerville-VariableFont_wght.ttf') format('truetype');font-style:normal;font-weight:400 700;font-display:swap}
+.variant-three{font-family:Jost,Arial,sans-serif;font-synthesis:none;--serif:'Libre Baskerville',Georgia,serif;--cyan:#00eee5}
+.variant-three ::selection{background:var(--cyan);color:#000}
+.variant-three [hidden]{display:none!important}
+.variant-three .skip-link:not(:focus){clip-path:inset(100%);width:1px;height:1px;overflow:hidden}
+.variant-three .hero{aspect-ratio:1920/1065}
+.variant-three .hero::before{display:none}
+.variant-three .hero h1{top:39%;font-family:Jost,Arial,sans-serif;font-weight:200;font-size:6.1vw;line-height:1.06;letter-spacing:.015em;color:#fff}
+.variant-three .main-nav,.variant-three .menu-toggle{color:#fff;font-weight:400}
+.variant-three .main-nav a::after{background:var(--cyan)}
+.variant-three .main-nav a:focus-visible::after{transform:scaleX(1)}
+.variant-three .emblem{bottom:-4.8vw}
+.variant-three .ribbon{font-weight:700;font-size:clamp(18px,1.65vw,32px);min-width:0;text-align:left;padding:.22em .65em;line-height:1.25}
+.discipline-inner,.clients-inner,.quote-inner{margin-inline:7.25vw 6.3vw}
+.variant-three .disciplines{padding-top:3.8vw}
+.disciplines-list{margin-top:1.4vw}
+.discipline{border-bottom:1px solid #8e8e8e;padding:1vw 0 .85vw}
+.discipline h3{margin:0;font:inherit}
+.discipline-trigger{display:block;width:100%;background:none;padding:0;text-align:left;font-family:Jost,Arial,sans-serif;font-size:clamp(24px,4.1vw,79px);font-weight:200;line-height:1.15;letter-spacing:.005em}
+.discipline.is-open .discipline-trigger,.discipline:hover .discipline-trigger,.discipline:focus-within .discipline-trigger{font-weight:600}
+.discipline-copy{font-size:clamp(16px,1.32vw,24px);line-height:1.4;margin-top:5px}
+/* Eine reservierte Zeile verhindert das Springen der Liste bei Rollover. */
+.enhanced .discipline-copy{visibility:hidden;opacity:0;pointer-events:none;transition:opacity .18s}
+.enhanced .discipline.is-open .discipline-copy{visibility:visible;opacity:1;pointer-events:auto}
+.translatable{position:relative;padding-right:36px;font-family:var(--serif);font-weight:400;line-height:1.35}
+.translation-content>p{margin:0}
+.language-toggle{position:absolute;right:0;top:-4px;font-family:Jost,Arial,sans-serif;font-weight:400;font-size:12px;letter-spacing:.08em;line-height:1;background:transparent;color:inherit;min-width:32px;min-height:28px;padding:5px;opacity:0;pointer-events:none;transition:opacity .18s;text-decoration:underline;text-decoration-color:var(--cyan);text-underline-offset:4px}
+.translatable:hover>.language-toggle,.translatable:focus-within>.language-toggle,.translatable.is-english>.language-toggle{opacity:.7;pointer-events:auto}
+.language-toggle:hover,.language-toggle:focus-visible{opacity:1!important}
+.discipline-copy .language-toggle{top:-4px}
+.variant-three .work{padding-top:7.6vw}
+.section-intro{font-size:clamp(16px,1.55vw,28px);margin-bottom:1.8vw;max-width:100%}
+.variant-three .section-label{font-family:Jost,Arial,sans-serif;font-weight:700;line-height:1.2;font-size:clamp(20px,1.9vw,36px);margin-bottom:.4vw}
+.section-intro .translatable{width:fit-content;max-width:100%;padding-right:40px}
+.variant-three .cases{gap:2.1vw}
+.variant-three .case>img{transform:none;transition:none}
+.project-caption{position:absolute;display:flex;flex-direction:column;justify-content:space-between;gap:2.2vw;width:clamp(148px,9.8vw,205px);min-height:9.8vw;padding:1.05vw;background:#adcff3}
+.project-caption h3{font-size:clamp(14px,.95vw,18px);line-height:1.25;margin:0;padding-bottom:.7em;border-bottom:1px solid #0005;font-weight:700}
+.project-caption .translatable{padding-right:0;font-size:clamp(14px,.94vw,18px);line-height:1.25}
+.case-perlweiss .project-caption{left:2.6%;bottom:4.6%}
+.case-priorin .project-caption{right:2.8%;top:4.6%;background:#c8b197;color:#fff}
+.case-forest .project-caption{left:3%;top:6%;background:#8b7841;color:#fff}
+.project-caption .language-toggle{top:-26px}
+.project-caption:hover .language-toggle,.project-caption:focus-within .language-toggle{opacity:.7;pointer-events:auto}
+.variant-three .section-link{margin-top:1vw}
+.more-link{display:inline-flex;align-items:center;justify-content:center;min-width:14.5vw;min-height:44px;padding:.3em 1.6em;background:var(--cyan);color:#000;font-family:Jost,Arial,sans-serif;font-size:clamp(17px,1.5vw,28px);font-weight:300;letter-spacing:.65em;text-indent:.65em;transition:background .2s}
+.more-link:hover{background:#00d2cc}
+.variant-three .role{padding:4.5vw 0 2.6vw;margin-top:3.5vw;background:#000;color:#fff}
+.role-inner{margin-inline:10.7vw 9.75vw}
+.variant-three .role-statement{margin:4vw 0 2.4vw;font-weight:300;font-size:7.45vw;line-height:.98;letter-spacing:-.025em}
+.variant-three .role-statement strong{font-weight:700;line-height:1.1}
+.role-copy{font-size:clamp(17px,1.55vw,28px);max-width:100%}
+.variant-three .role .section-link{margin-top:2.4vw;margin-right:-6.3vw}
+.variant-three .clients{padding-top:6.5vw}
+.variant-three .client-grid{margin:4vw 0 0;gap:3.2vw 2.2vw}
+.variant-three .client{height:6vw}
+.quote{padding-top:9vw}
+.quote figure{margin:4.5vw 0 0}
+.quote-copy{font-size:clamp(26px,3.7vw,70px);line-height:1.17;letter-spacing:-.035em}
+.quote-copy blockquote{margin:0}
+.quote figcaption{display:table;margin-top:1.6vw;padding-top:1vw;border-top:1px solid #888;font-size:clamp(14px,1.4vw,24px);font-weight:400}
+.contact{display:flex;align-items:baseline;justify-content:space-between;gap:20px;margin-top:8vw;margin-bottom:5vw;padding:1.5vw 0;border-top:1px solid #aaa;font-size:clamp(18px,1.8vw,30px)}
+.contact-link{font-weight:500;white-space:nowrap;text-decoration:underline;text-decoration-color:var(--cyan);text-decoration-thickness:3px;text-underline-offset:7px;padding-block:12px}
+.contact-link:hover{text-decoration-color:currentColor}
+/* Footer bleibt in Aufbau und bisheriger Typografie bestehen. */
+.variant-three .footer{font-family:var(--font)}
+.variant-three .preview-dialog{font-family:Jost,Arial,sans-serif}
+@media(hover:none),(pointer:coarse){.language-toggle{opacity:.65;pointer-events:auto}}
+@media(min-width:1920px){.variant-three .hero h1{font-size:117px}.variant-three .role-statement{font-size:143px}}
+@media(max-width:1000px){.project-caption{padding:14px;gap:28px;width:160px;min-height:160px}.project-caption .translatable{padding-right:0;font-size:14px}.variant-three .client-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:26px}.variant-three .client{height:75px}.disciplines-list{margin-top:18px}.discipline{padding:14px 0 10px}.discipline-copy{font-size:16px}.discipline-trigger{font-size:4vw}}
+@media(max-width:600px){
+ .variant-three .hero{aspect-ratio:auto;height:78svh;min-height:560px;max-height:760px}
+ .variant-three .hero-image{object-position:82% center}
+ .variant-three .hero h1{top:42%;left:20px;right:20px;max-width:72%;font-size:9.2vw;line-height:1.12;letter-spacing:0;text-shadow:0 1px 12px #0006}
+ .variant-three .main-nav{background:#080808;color:#fff}
+ .variant-three .emblem{bottom:-42px}
+ .variant-three .disciplines{padding-top:78px}
+ .discipline-inner,.clients-inner,.quote-inner{margin:0}
+ .variant-three .ribbon{font-size:18px}
+ .discipline-trigger{font-size:clamp(24px,6vw,36px);line-height:1.13;padding-block:5px}
+ .enhanced .discipline-copy{display:none}
+ .enhanced .discipline.is-open .discipline-copy{display:block}
+ .discipline-copy{margin-top:12px;min-height:0;font-size:16px;line-height:1.45;padding-right:8px}
+ .language-toggle{opacity:.65;pointer-events:auto}
+ .discipline-copy .translatable{padding-right:30px}
+ .discipline-copy .language-toggle{top:-6px;right:-6px;min-height:44px}
+ .variant-three .work{padding-top:65px}
+ .section-intro{font-size:16px;line-height:1.5;margin-bottom:24px}
+ .section-intro .translatable{padding-right:28px}
+ .section-intro br{display:none}
+ .variant-three .section-label{font-size:21px;margin-bottom:12px}
+ .variant-three .cases{gap:24px}
+ .project-caption,.case-perlweiss .project-caption,.case-priorin .project-caption,.case-forest .project-caption{position:static;width:100%;min-height:0;padding:18px;color:#000;display:grid;grid-template-columns:1fr 1.5fr;gap:18px;align-items:start}
+ .project-caption h3{padding:0;border:0;font-size:14px}
+ .project-caption .translatable{padding-right:0;font-size:14px;padding-bottom:24px}
+ .project-caption .language-toggle{top:auto;bottom:-10px;right:-8px;min-height:36px}
+ .variant-three .section-link{margin-top:16px}
+ .more-link{min-width:150px;font-size:18px}
+ .variant-three .role{padding:44px 20px 24px;margin-top:50px}
+ .role-inner{margin:0}
+ .variant-three .role-statement{margin:36px 0 30px;font-size:11.8vw;line-height:1.04;letter-spacing:-.03em}
+ .role-copy{font-size:17px;line-height:1.55;padding-right:26px}
+ .role-copy .language-toggle{top:0;right:-8px;min-height:44px}
+ .variant-three .role .section-link{margin:26px 0 0}
+ .variant-three .clients{padding-top:60px}
+ .variant-three .client-grid{gap:22px 12px;margin-top:35px}
+ .variant-three .client{height:62px}
+ .quote{padding-top:70px}
+ .quote figure{margin-top:28px}
+ .quote-copy{font-size:clamp(27px,7.6vw,43px);line-height:1.25;padding-top:12px;letter-spacing:-.035em}
+ .quote-copy .language-toggle{top:-24px;min-height:36px}
+ .quote figcaption{font-size:14px;line-height:1.5;margin-top:24px;padding-top:12px}
+ .contact{margin-top:65px;margin-bottom:38px;padding-top:20px;align-items:flex-start;flex-direction:column;gap:2px;font-size:21px}
+ .contact-link{font-size:17px}
+}
+@media(prefers-reduced-motion:reduce){.enhanced .discipline-copy,.language-toggle,.more-link{transition:none}}
