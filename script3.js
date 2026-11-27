@@ -41,16 +41,17 @@ document.querySelectorAll('.translatable').forEach((block, index) => {
 document.querySelectorAll('.discipline').forEach(row => {
   const button = row.querySelector('.discipline-trigger');
   const copy = row.querySelector('.discipline-copy');
+  const navigates = button.matches('a');
   let pinned = false;
   let hovered = false;
   function render() {
     const open = pinned || hovered || row.contains(document.activeElement);
     row.classList.toggle('is-open', open);
-    button.setAttribute('aria-expanded', String(open));
+    if (!navigates) button.setAttribute('aria-expanded', String(open));
     copy.inert = !open;
     copy.setAttribute('aria-hidden', String(!open));
   }
-  button.addEventListener('click', () => {
+  if (!navigates) button.addEventListener('click', () => {
     pinned = !pinned;
     if (!pinned && !hovered) button.blur();
     render();

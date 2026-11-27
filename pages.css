@@ -1,0 +1,122 @@
+/* Unterseiten vom 27.11.2026 – gemeinsame Gestaltung auf Basis der Startseite. */
+.visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}
+.subpage h1,.subpage h2{font-family:Jost,Arial,sans-serif;margin:0;font-weight:600;line-height:.99;letter-spacing:-.025em}
+.page-gutter{margin-inline:3.45vw}.content-inset{margin-inline:10.7vw 9.75vw}
+.subpage .header .main-nav{font-family:Jost,Arial,sans-serif;font-size:clamp(14px,1.15vw,22px)}
+.cases-page>.header{position:relative;inset:auto;margin:2.5vw 3.45vw 1.5vw;min-height:2.1vw}
+.cases-page .main-nav{color:#080808}
+.cases-page .main-nav [aria-current=page]::after{transform:scaleX(1)}
+.cases-overview{margin-inline:3.45vw}
+.case-tile{position:relative;width:100%;margin-bottom:2.4vw}
+.case-tile>img{display:block;width:100%;height:auto}
+.case-pair{display:grid;grid-template-columns:1fr 1fr;gap:2vw}
+.case-pair .case-tile{min-width:0}
+.case-pair .case-tile>img{width:100%;aspect-ratio:875/894;object-fit:cover}
+.case-tile .project-caption{z-index:1;width:clamp(140px,9.8vw,205px);min-height:9.8vw;gap:2.2vw}
+.case-tile .project-caption h2{font-size:clamp(14px,.95vw,18px);line-height:1.2;border-bottom:1px solid #ffffff70;padding-bottom:.7em;font-weight:700;letter-spacing:0}
+.case-tile .project-caption h2 button{background:transparent;padding:0;text-align:left;font:inherit}
+.case-tile .project-caption h2 button:hover{text-decoration:underline;text-underline-offset:4px}
+.caption-bottom-left .project-caption{left:2.7%;bottom:4.5%}
+.caption-bottom-right .project-caption{right:2.6%;bottom:4.5%}
+.caption-top-left .project-caption{left:2.7%;top:4.5%}
+.caption-top-right .project-caption{right:5%;top:4.5%}
+.tile-priorin_dailyhair .project-caption{background:#bda990e8;color:#fff;left:5%}
+.tile-lavera_calm_comfort .project-caption{background:#9593afe8;color:#fff}
+.tile-rothaus_black_forest .project-caption{background:#8b7841e8;color:#fff}
+.tile-lunalaif .project-caption{background:#694775e8;color:#fff}
+.tile-genki_serie .project-caption{background:#dc7778e8;color:#fff}
+.tile-miele .project-caption{background:#bca98de8;color:#fff;left:5%}
+.tile-salthouse_range .project-caption{background:#6b9daae8;color:#fff;right:5%}
+.case-manifesto{position:relative;padding:0 7.4vw 2.6vw;margin-top:-.2vw}
+.case-manifesto h2{font-size:8.1vw;font-weight:200;line-height:.95;letter-spacing:-.035em}
+.case-manifesto .translatable{font-size:clamp(16px,1.6vw,30px);width:56%;margin-left:49%;margin-top:-6.05vw;min-height:5vw}
+.marked{position:relative;z-index:0}.marked::after{content:'';position:absolute;left:-7.4vw;bottom:.04em;height:.09em;width:19vw;z-index:-1}.marked-sand::after{background:#dfd3a2}.marked-sage::after{background:#98b49a}
+.nature-feature{display:grid;grid-template-columns:1fr 1fr;gap:2vw;align-items:center;margin:0 0 2.4vw}
+.nature-feature h2{font-size:4.8vw;font-weight:200;line-height:.96;letter-spacing:-.035em;padding-left:7.4vw}
+.nature-feature img{width:100%;height:auto}
+.cases-ending{height:14vw;position:relative}
+.cases-ending img{position:absolute;right:0;bottom:-5vw;width:10vw;height:auto;z-index:1}
+.discipline-hero{position:relative;aspect-ratio:1920/1100;isolation:isolate}
+.discipline-hero-image{width:100%;height:100%;object-fit:cover;position:absolute;inset:0;z-index:-1}
+.discipline-hero h1{position:absolute;left:10.7vw;right:5vw;top:39%;font-size:7.2vw;font-weight:600;line-height:.92;letter-spacing:-.02em}
+.strategy-hero{color:#fff}.strategy-hero .brand img{filter:invert(1)}
+.branding-hero .main-nav{color:#000}
+.discipline-emblem{position:absolute;width:10vw;right:3.6vw;bottom:-3.1vw}
+.discipline-emblem img{width:100%;height:auto;transition:transform .4s}
+.discipline-emblem:hover img{transform:rotate(12deg)}
+.discipline-intro{padding-top:3vw;padding-bottom:5vw}
+.discipline-intro h2{font-size:4.5vw;margin-bottom:1.8vw}
+.copy-columns{display:grid;grid-template-columns:1fr 1fr;gap:4.5vw}
+.subpage .translatable{font-size:clamp(16px,1.5vw,28px);line-height:1.15;font-weight:400}
+.subpage .language-toggle{font-size:12px;letter-spacing:.08em}
+.image-statement{display:grid;grid-template-columns:1fr 1fr;gap:4vw;align-items:start;margin-bottom:3vw}
+.image-statement>img{width:100%;height:auto}
+.image-statement h2{font-size:4.7vw;line-height:1.02;margin-top:-.4vw}
+.wide-statement{position:relative;padding-top:.5vw;padding-bottom:5.4vw}
+.wide-statement h2{font-size:7.2vw;line-height:.94;letter-spacing:-.025em}
+.wide-statement>.translatable{margin-left:24%;margin-top:-5.1vw;min-height:5vw}
+.full-image{width:100%;height:auto}
+.scribble-section{position:relative;isolation:isolate;overflow:hidden}
+.scribble-background{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-1}
+.strategy-scribble{aspect-ratio:1920/1089}
+.strategy-scribble .scribble-content{padding-top:3vw}
+.strategy-scribble h2{font-size:4.5vw;line-height:.97;margin-bottom:1.8vw}
+.branding-statement{padding-top:4vw;padding-bottom:1vw}
+.branding-statement h2{font-size:4.5vw}
+.branding-scribble{min-height:30.6vw}
+.branding-scribble .scribble-content{padding-top:3.3vw;padding-bottom:5vw}
+.discipline-next{display:flex;justify-content:flex-end;padding-block:1.3vw;font-size:clamp(14px,1.15vw,20px);font-weight:500}
+.discipline-next a{padding-block:14px;text-decoration:underline;text-decoration-color:var(--cyan);text-underline-offset:6px}
+@media(max-width:1000px) and (min-width:601px){.subpage .translatable{font-size:16px;line-height:1.3}.case-tile .project-caption{width:140px;min-height:140px;padding:12px;gap:24px}.case-tile .project-caption .translatable{font-size:14px}.strategy-scribble{aspect-ratio:auto;min-height:65vw}.wide-statement>.translatable{margin-top:20px;margin-left:24%}.case-manifesto .translatable{font-size:16px}.copy-columns{gap:3vw}}
+@media(max-width:600px){
+ .page-gutter,.cases-overview{margin-inline:20px}.content-inset{margin-inline:20px}
+ .subpage .header .main-nav{font-size:23px}
+ .cases-page>.header{margin:18px 20px 20px;min-height:44px}
+ .cases-page .menu-toggle{color:#000}.cases-page .main-nav.is-open{color:#fff}
+ .case-tile{margin-bottom:24px}.case-pair{grid-template-columns:1fr;gap:0}
+ .case-tile .project-caption,.case-tile.caption-bottom-left .project-caption,.case-tile.caption-bottom-right .project-caption,.case-tile.caption-top-left .project-caption,.case-tile.caption-top-right .project-caption{position:static;width:100%;min-height:0;display:grid;grid-template-columns:1fr 1.5fr;gap:16px;padding:16px;color:#000}
+ .case-tile .project-caption h2{font-size:14px;border:0;padding:0;margin:0}
+ .case-tile .project-caption .translatable{font-size:14px;line-height:1.3;padding-bottom:22px}
+ .case-tile .project-caption .language-toggle{top:auto;bottom:-10px;right:-6px;min-height:36px}
+ .case-tile .project-caption h2 button{min-height:44px}
+ .case-manifesto{padding:10px 0 36px;margin:0}
+ .case-manifesto h2{font-size:11.8vw;line-height:1.02}
+ .case-manifesto .translatable{width:100%;margin:24px 0 0;min-height:0;font-size:17px;line-height:1.5}
+ .marked::after{left:0;width:35vw;bottom:0}
+ .nature-feature{grid-template-columns:1fr;gap:24px;margin-bottom:24px}
+ .nature-feature h2{font-size:10vw;padding:8px 0;line-height:1.05}
+ .cases-ending{height:105px}.cases-ending img{width:95px;bottom:-42px}
+ .discipline-hero{aspect-ratio:auto;min-height:580px;height:78svh;max-height:820px}
+ .discipline-hero h1{left:20px;right:20px;top:38%;font-size:10.5vw;line-height:1.04;overflow-wrap:normal}
+ .discipline-hero h1 br{display:none}
+ .discipline-hero h1 br::after{content:' '}
+ .strategy-hero .discipline-hero-image{object-position:48% center}
+ .branding-hero .discipline-hero-image{object-position:57% center}
+ .branding-hero .main-nav{color:#fff}
+ .branding-hero .menu-toggle{color:#000}
+ .discipline-emblem{width:95px;right:22px;bottom:-42px}
+ .discipline-intro{padding-top:80px;padding-bottom:45px}
+ .discipline-intro h2{font-size:9vw;line-height:1.07;margin-bottom:26px}
+ .copy-columns{grid-template-columns:1fr;gap:24px}
+ .subpage .translatable{font-size:17px;line-height:1.5;padding-right:32px}
+ .image-statement{grid-template-columns:1fr;gap:26px;margin-bottom:40px}
+ .image-statement h2{font-size:9.4vw;line-height:1.07;margin:0}
+ .wide-statement{padding-top:0;padding-bottom:40px}
+ .wide-statement h2{font-size:11.5vw;line-height:1.02}
+ .wide-statement>.translatable{margin:26px 0 0;min-height:0}
+ .strategy-scribble{aspect-ratio:auto;min-height:760px}
+ .strategy-scribble .scribble-content{padding-top:36px;padding-bottom:290px}
+ .strategy-scribble h2{font-size:9vw;line-height:1.05;margin-bottom:26px}
+ .strategy-scribble .scribble-background{object-position:32% bottom}
+ .branding-statement{padding-top:38px;padding-bottom:0}
+ .branding-statement h2{font-size:9.4vw}
+ .branding-scribble{min-height:350px}
+ .branding-scribble .scribble-content{padding-top:36px;padding-bottom:50px}
+ .branding-scribble .scribble-background{object-position:50% center}
+ .discipline-next{justify-content:flex-start;padding-block:18px;font-size:15px}
+}
+
+.cases-page .project-caption .translatable{font-size:clamp(14px,.94vw,18px);line-height:1.25;padding-right:0}
+@media(max-width:600px){.cases-page .project-caption .translatable{font-size:14px;line-height:1.3;padding-bottom:22px}}
+
+@media(min-width:1001px){.branding-scribble .wide-statement>.translatable{margin-left:33%}}
